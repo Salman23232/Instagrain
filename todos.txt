@@ -1,0 +1,54 @@
+step 1: installing all dependencies 
+step 2: importing and initializing all dependencies
+step 3: importing dotenv and using dotenv to connect mongodb using mongoose
+step 4: creating the basic express server 
+step 5: creating the user model
+=>
+=>
+=>
+=>
+=>
+step 6:creating the controllers folder and creating controllers
+=>
+=>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+backend 
+step one : installing express js and initializing basic express server
+things you need to import to your backend server
+1. cors 2. mongoose 3.cookie-parser 4. express
+step 2 : installing mongoose and creating models folder and creating the models in it
+now steps to create a model,
+step 1: creating the schema
+step 2: creating the model from the schema
+step 4: installing and setting up passport jwt in index.js
+step 5: Routes folder create and creating routes
+step 6: creating auth.js and creating route for register
+steps to create the register authentication route:
+        step:1 : getting the data from req.body
+        step:2 : check if a user with same email already exists or not
+        step:3 : this is a legitimate user. now start creating  the user 
+        step 4: creating the hashed Password
+step 7: creating and connecting the database of mongodb to express js
+steps to connect mongodb to the backend server:
+        step:1 : need to use mongoose.connect which takes to argument , 1:connection string 2:connection options 
+        step:2 :setting up the process.env file 
+        step:3 : 
+        step 4: 
+step 8: 
+
+salmanahmed
+ZlS6lQbtl7jhSnYl
