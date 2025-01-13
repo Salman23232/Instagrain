@@ -9,8 +9,10 @@ step 5: creating the user model
 =>
 =>
 step 6:creating the controllers folder and creating controllers
+=> creating the register controller 
 =>
-=>
+
+step 7: after creating the controller, Now create the routes in route folder
 
 
 
