@@ -140,9 +140,9 @@ export const editProfile = async (req, res) => {
      const profilePicture = req.file
      let cloudResponse;
      if (profilePicture) {
-    // we need to setup dataUri in order to continue the operation
+    // we need to setup dataUri in order to upload any image on cloudinary. to upload any image we use dataUri
     const fileUri = getDataUri()
-    // to upload on cloudinary we need to setup it
+    // then we need to upload the data uri to the cloudinary on the cloudResponse variable
      cloudResponse = await cloudinary.uploader.upload(fileUri)
      }
      //we need to find the user first in order to update the profile
@@ -244,9 +244,6 @@ export const followOrUnfollow = async (req, res) => {
         }
 
 
-    return res.status(200).json({
-        success: true,
-    })
     } catch (error) {
       console.log(error);
     }

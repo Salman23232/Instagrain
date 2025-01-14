@@ -1,7 +1,7 @@
 import DataUriParser from 'datauri/parser.js'
 import path from 'path'
 
-const parser = DataUriParser()
+const parser = new DataUriParser()
 
 const getDataUri =  (file) => {
     // getting the extension name

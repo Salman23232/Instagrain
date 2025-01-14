@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-export const authMiddleware = async (req, res, next) => {
+const authMiddleware = async (req, res, next) => {
   try {
     // Extracting the token from cookies
     const token = req.cookies?.token;
@@ -24,7 +24,7 @@ export const authMiddleware = async (req, res, next) => {
       });
     }
 
-    // Assigning the decoded userId to req.id
+    // Assigning the decoded userId to req.id. this is used to get the logged in user id when they are verified logged in user
     req.id = decoded.userId;
 
     // Proceed to the next middleware
@@ -37,4 +37,8 @@ export const authMiddleware = async (req, res, next) => {
     });
   }
 };
+
+export default authMiddleware
+
+//next step: we need to use this middleware on routes to authenticate the user
 

@@ -1,10 +1,12 @@
 import express, { urlencoded } from "express";
 import cors from 'cors'
-import jwt from 'jsonwebtoken'
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
+import userRoute from './app/config/user.route.js'
 import ConnectMongoDB from "./app/utility/mongodbConnect.js";
 dotenv.config({})
+
+
 
 // creating/initializing the express app
 const app = express()
@@ -20,7 +22,8 @@ const corsOptions = {
 } // connect react with express
 app.use(cors(corsOptions))
 
-
+//attaching the routes in app.js . api comes here
+app.use('api/v1/user', userRoute)
 
 app.get('/', function (req, res) {
     res.send('hello')

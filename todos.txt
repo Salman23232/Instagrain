@@ -13,6 +13,11 @@ step 6:creating the controllers folder and creating controllers
 =>
 
 step 7: after creating the controller, Now create the routes in route folder
+step 8: while creating the routes we need to upload pictures and files. In order to do that we will need a middleware called multer
+step 9: we need to create more middlewares throughout building the app. such as authentication middleware. middlewares are used on routes to recheck before the response come
+step 10:After that we need to attach it with app.js. user api is done building
+step 11: start creating the post controller
+
 
 
 
